@@ -18,8 +18,7 @@ import retinalwebapp.views
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'retinalwebapp.views.home', name='home'),
-    url(r'^$login', 'retinalwebapp.views.login', name='login'),
-    url(r'^$signup', 'retinalwebapp.views.signup', name='signup'),
+    url(r'^signup', 'retinalwebapp.views.signup', name='signup'),
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

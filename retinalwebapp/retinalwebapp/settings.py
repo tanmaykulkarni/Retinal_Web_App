@@ -24,6 +24,10 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = (
+  '/home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates',
+)
+
 ALLOWED_HOSTS = []
 
 

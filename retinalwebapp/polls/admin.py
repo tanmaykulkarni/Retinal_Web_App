@@ -4,7 +4,7 @@ from polls.models import Choice, Question
 # Register your models here.
 class ChoiceInline(admin.StackedInline):
     model = Choice
-    extra = 4
+    extra = 0
 
 
 class QuestionAdmin(admin.ModelAdmin):

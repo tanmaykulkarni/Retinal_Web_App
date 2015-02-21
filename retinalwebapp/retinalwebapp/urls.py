@@ -1,11 +1,11 @@
 '''
   The page heirarchy of the webapp is as follows:
   
-                   IlabelIT
+                   iLabelIT
                    /      \
                  Login  Signup
                  /   \
-               Quiz  Abnormalities
+               Quiz  Annotation
                 
 
 '''
@@ -19,6 +19,8 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'retinalwebapp.views.home', name='home'),
     url(r'^signup', 'retinalwebapp.views.signup', name='signup'),
+    url(r'^choose_activity', 'retinalwebapp.views.choose_activity', name='choose_activity'),
+    url(r'^annotation', 'retinalwebapp.views.annotation', name='annotation'), 
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

@@ -29,3 +29,25 @@ def signup(request):
 
     return HttpResponse(template.render(context))
 
+def choose_activity(request):
+    users = User.objects.all()
+
+    template = loader.get_template('choose_activity.html')
+
+    context = Context({
+      'users_list' : users
+})
+    return HttpResponse(template.render(context))
+
+def annotation(request):
+    users = User.objects.all()
+
+    template = loader.get_template('annotation.html')
+
+    context = Context({
+      'users_list' : users
+})
+
+    return HttpResponse(template.render(context))
+
+

@@ -250,9 +250,10 @@ textarea {
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
-
-          <button type="submit" class="button button-block"/>Get Started</button>
-
+        
+         <a href='choose_activity.html'> 
+         <button type="submit" class="button button-block"/>Get Started</button>
+         </a>
           </form>
 
         </div>
@@ -278,6 +279,7 @@ textarea {
 
           
           <button class="button button-block"/>Log In</button>
+          
 
           </form>
 

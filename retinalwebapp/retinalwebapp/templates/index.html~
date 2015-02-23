@@ -7,7 +7,7 @@
 
   <title>Welcome to iLabelIT</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <!--link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'-->
 
   <link rel="stylesheet" href="css/normalize.css">
 
@@ -219,8 +219,10 @@ textarea {
         <div id="signup">   
           <h1>Sign Up for Free</h1>
 
-          <form action="/" method="post">
+          <form action="" method="post"> 
+                  {{form.as_p}}	
 
+<!--
           <div class="top-row">
             <div class="field-wrap">
               <label>
@@ -239,6 +241,13 @@ textarea {
 
           <div class="field-wrap">
             <label>
+              Institute Name<span class="req">*</span>
+            </label>
+            <input type="text"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
               Email Address<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off"/>
@@ -250,10 +259,17 @@ textarea {
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
+
+          <div class="field-wrap">
+            <label>
+              Re-enter Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
         
-         <a href='choose_activity.html'> 
-         <button type="submit" class="button button-block"/>Get Started</button>
-         </a>
+         -->
+           <input type="submit" class="button button-block"/>
+         
           </form>
 
         </div>

@@ -24,6 +24,10 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = (
+  '/home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates',
+)
+
 ALLOWED_HOSTS = []
 
 
@@ -36,7 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls',
+    'retinalwebapp',
+    'retinalwebapp.User',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,8 +64,12 @@ WSGI_APPLICATION = 'retinalwebapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'retina',
+        'USER': 'root',
+        'PASSWORD': 'asd',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '8000',
     }
 }
 

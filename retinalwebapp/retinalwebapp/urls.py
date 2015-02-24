@@ -24,4 +24,11 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+
+    # user auth urls
+    url(r'^accounts/login/$', 'retinalwebapp.views.login'),
+    url(r'^accounts/auth/$', 'retinalwebapp.views.auth_views'),
+    # url(r'^accounts/logout/$', 'retinalwebapp.views.logout'),
+    url(r'^accounts/loggedin/$', 'retinalwebapp.views.loggedin'),
+    url(r'^accounts/invalid/$', 'retinalwebapp.views.invalid_login'),
 )

@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <title>Welcome to iLabelIT</title>
+  <title>Sign Up - iLabelIT</title>
 
   <!--link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'-->
 
@@ -67,16 +67,16 @@ a:hover {
   color: #a0b3b0;
   font-size: 20px;
   float: left;
-  width: 50%;
+  width: 100%;
   text-align: center;
   cursor: pointer;
   -webkit-transition: .5s ease;
           transition: .5s ease;
 }
-.tab-group li a:hover {
+/*.tab-group li a:hover {
   background: #2661BE;
   color: #ffffff;
-}
+}*/
 .tab-group .active a {
   background: #3079ed;
   color: #ffffff;
@@ -212,17 +212,15 @@ textarea {
 
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
       </ul>
 
       <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up for Free</h1>
 
-          <form action="" method="post"> {% csrf_token %}
-                  {{form_signup.as_p}}	
+          <form action="" method="post"> 
 
-<!--
+
           <div class="top-row">
             <div class="field-wrap">
               <label>
@@ -267,47 +265,14 @@ textarea {
             <input type="password"required autocomplete="off"/>
           </div>
         
-         -->
-           <input type="submit" class="button button-block"/>
          
+           <input type="submit" class="button button-block"/>
+           <br><p>Already Registered ? <a href="file:///home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates/login.html"> Log In </a><p>
           </form>
 
         </div>
 
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-
-          <form action="choose_activity.html" method="post"> {% csrf_token %}
-                  {{form.as_p}}	
-
-        <!--    <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
--->
-
-          
-          <button class="button button-block"/>Log In</button>
-          
-
-          </form>
-
-        </div>
-
-      </div><!-- tab-content -->
-
-</div> <!-- /form -->
-
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
   <script src="js/index.js"></script>
 

@@ -8,3 +8,5 @@ class User(models.Model):
   institute = models.CharField(max_length=200)	# the institution that the doctor belongs to (default LVP)
   email = models.EmailField(max_length=200)	# the email of the doc
   password = models.CharField(max_length=10)	# password
+
+

@@ -31,4 +31,6 @@ urlpatterns = patterns('',
     # url(r'^accounts/logout/$', 'retinalwebapp.views.logout'),
     url(r'^accounts/loggedin/$', 'retinalwebapp.views.loggedin'),
     url(r'^accounts/invalid/$', 'retinalwebapp.views.invalid_login'),
+   # url(r'^accounts/register/$', 'retinalwebapp.views.register_user'),
+    #url(r'^accounts/register_success/$', 'retinalwebapp.views.register_success'),
 )

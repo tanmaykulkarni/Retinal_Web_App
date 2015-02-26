@@ -6,8 +6,10 @@ from django.core.context_processors import csrf
 from django.template import Context, loader 
 from django.template import RequestContext
 from django.shortcuts import render, render_to_response, RequestContext
+from django.contrib.auth.forms import UserCreationForm
 from retinalwebapp.models import User
 from .forms import SignUpForm, LoginForm
+
 
 # Create your views here.
 def signup(request):
@@ -56,11 +58,15 @@ def home(request):
 
     form_signup = SignUpForm(request.POST or None)	
     form_login = LoginForm(request.POST or None)
-
+    
+    # checking if the signup form is valid and saving it if so
     if form_signup.is_valid():
       save_it = form.save(commit=False)
       save_it.save()
 
+    # check if the login credentials match...
+    
+    
     return render_to_response("index.html",locals(), context_instance=RequestContext(request))
 
 
@@ -77,6 +83,7 @@ def login(request):
 
 
 def auth_views(request):
+    # this has been modified from <>
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
@@ -85,7 +92,7 @@ def auth_views(request):
        auth.login(request, user)
        return HttpResponseRedirect('/accounts/loggedin')
     else:
-        return HttpsResponseRedirect('/accounts/invalid')
+        return HttpResponseRedirect('/accounts/invalid')
 
 
 
@@ -110,3 +117,21 @@ def loggedin(request):
 
 def invalid_login(request):
     return render_to_request('index.html')
+
+
+
+def register_user(request):
+    if request.method == 'POST':
+       form = UserCreationForm(request.POST)
+       if form.is_valid():
+          form.save()
+          return HttpResponseRedirect('choose_activity.html')
+
+
+    args = {}
+    args.update(csrf(request))
+
+    args['form'] = UserCreationForm()
+
+    return render_to_response('index.html', args)
+

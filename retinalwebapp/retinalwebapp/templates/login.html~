@@ -16,6 +16,7 @@
 
 
 <!-- Styling starts here -->
+
 <style>
 *, *:before, *:after {
   box-sizing: border-box;
@@ -59,7 +60,7 @@ a:hover {
   display: table;
   clear: both;
 }
-.tab-group li a {
+.tab-group li a {                                    /* Styling of the Login bar on the top of the page (This is not a button) */
   display: block;
   text-decoration: none;
   padding: 15px;
@@ -77,7 +78,7 @@ a:hover {
   background: #2661BE;
   color: #ffffff;
 }*/
-.tab-group .active a {
+.tab-group .active a {                               /* Color of the Login bar on the top of the page (This is not a button) */
   background: #3079ed;
   color: #ffffff;
 }
@@ -86,7 +87,7 @@ a:hover {
   display: none;
 }
 
-h1 {
+h1 {                                                 /* Styling of the "Welcome Back!" text */
   text-align: center;
   color: #666666;
   font-weight: 300;
@@ -126,7 +127,7 @@ label.highlight {
   color: #ffffff;
 }
 
-input, textarea {
+input, textarea {                                    /* Text input styling */
   font-size: 22px;
   display: block;
   width: 100%;
@@ -169,7 +170,7 @@ textarea {
   margin: 0;
 }
 
-.button {
+.button {                                            /* Submit button styling */
   border: 0;
   outline: none;
   border-radius: 0;
@@ -184,7 +185,7 @@ textarea {
           transition: all 0.5s ease;
   -webkit-appearance: none;
 }
-.button:hover, .button:focus {
+.button:hover, .button:focus {                       /* Submit button hovering syling */
   background: #2661BE;
 }
 
@@ -215,28 +216,28 @@ textarea {
       </ul>
 
 <div id="login">   
-          <h1>Welcome Back!</h1>
+          <h1>Welcome Back!</h1>                                               <!-- Welcome Back! text -->
 
           <form action="choose_activity.html" method="post"> 	
 
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Email Address<span class="req">*</span>                         <!-- Email Address text -->
             </label>
             <input type="email"required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
-              Password<span class="req">*</span>
+              Password<span class="req">*</span>                                <!-- Password text -->
             </label>
             <input type="password"required autocomplete="off"/>
           </div>
 
 
           
-          <button class="button button-block"/>Submit</button>
-          <p> New User? <a href="http://localhost:8000/"> Sign Up!</a><p>
+          <button class="button button-block"/>Submit</button>                  <!-- Submit button -->
+          <br><p> New User? <a href="http://localhost:8000/"> Sign Up!</a><p>   <!-- New User? text and Sign Up! button -->
           
 
           </form>
@@ -251,9 +252,10 @@ textarea {
 
   <script src="js/index.js"></script>
 
-<!-- Javascript starts here -->
+<!-- Javascript starts here -->                                                                                                           
+
 <script>
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+$('.form').find('input, textarea').on('keyup blur focus', function (e) {    // Input text function
   
   var $this = $(this),
       label = $this.prev('label');
@@ -282,7 +284,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 
 });
 
-$('.tab a').on('click', function (e) {
+$('.tab a').on('click', function (e) {                                      // Button clicking function            
   
   e.preventDefault();
   

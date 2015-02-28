@@ -9,7 +9,9 @@
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
-    <style>
+<!-- Styling starts here -->    
+
+<style>
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -92,6 +94,8 @@ body{
 }
 </style>
 
+<!-- Styling ends here -->
+
     <script src="js/prefixfree.min.js"></script>
 
 </head>
@@ -107,7 +111,7 @@ body{
   </div>
   <div class='actions'>
     <a class='success' href='#'>TAKE A QUIZ</a>
-    <a href='/annotation'>ANNOTATE RETINAL IMAGES</a>
+    <a href='annotation'>ANNOTATE RETINAL IMAGES</a>
   </div>
   <div class='loader-bar'>
     <div class='bar'></div>

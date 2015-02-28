@@ -8,6 +8,9 @@
   <title>Annotation</title>
 
 <div>
+
+<!-- Styling of tooltip starts here -->    
+
 <style>
 @import url(http://fonts.googleapis.com/css?family=Muli);
 body {
@@ -198,7 +201,7 @@ a:hover {
 .btn:active {
   background-color: #5F8AAF;
 }
-.slider-container {
+.slider-container {              
   width: 350px;
   margin: 0 25px;
   overflow: hidden;
@@ -208,6 +211,8 @@ a:hover {
 }
 
 </style>
+
+<!-- Styling of tooltip ends here -->    
 
     <script src="js/prefixfree.min.js"></script>
 
@@ -222,7 +227,7 @@ a:hover {
   <div class="slider-container">
     <div class="slider-turn">
       <p>
-        Annotation has nver been so easy.
+        Annotation has never been so easy.
       </p>
 
       <p>
@@ -323,6 +328,7 @@ $(document).ready(function () {
 </div>
     
 
+<!-- Styling of the bg body starts here -->    
 
    <style>
 html, body {
@@ -480,6 +486,9 @@ img {
 }
 
 </style>
+
+<!-- Styling of bg body ends here -->    
+
 
     <script src="js/prefixfree.min.js"></script>
 

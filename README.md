@@ -8,7 +8,7 @@ iLabelIT is divided into tow parts.
 - ANNOTATE RETINAL IMAGES
 
 * QUIZ <br>
-a) The QUIZ section is generally targeted for students in which students can take a small QUIZ which consist of 10 retinal images which the students can anotate and can detect the defect in it.(This section is still under development) <br>
+a) The QUIZ section is generally targeted for students in which students can take a small QUIZ which consist of 10 retinal images which the students can annotate and can detect the defect in it.(This section is still under development) <br>
 b) Doctors can also use the QUIZ section and is optional for them to use. The QUIZ part of the web app is used in a gamification way and can be used by doctors and students to test out their knowledge and refrsh their memory. <br>
 
 * ANNOTATE RETINAL IMAGES <br>

@@ -267,7 +267,7 @@ textarea {
           </div>
         
          
-           <input type="submit" class="button button-block"/>
+           <input type="submit" class="button button-block"/>      <!-- Submit Button -->
            <br><p>Already Registered ? <a href="file:///home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates/login.html"> Log In </a><p>                                                     <!-- Already registered text and Log In button -->
           </form>
 

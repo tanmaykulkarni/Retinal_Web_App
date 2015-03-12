@@ -25,7 +25,21 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 TEMPLATE_DIRS = (
-  '/home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates',
+  '/home/tanmay/redx/retina-app-new/retinalwebapp/retinalwebapp/templates/',
+)
+
+
+TEMPLATE_LOADERS = (
+  'django.template.loaders.filesystem.Loader',
+  'django.template.loaders.app_directories.Loader',
+  'django_mobile.loader.Loader',
+)
+
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+
+  'django.contrib.auth.context_processors.auth',
+  'django_mobile.context_processors.flavour',
 )
 
 ALLOWED_HOSTS = []
@@ -41,6 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'retinalwebapp',
+    'django_mobile',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +66,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_mobile.middleware.MobileDetectionMiddleware',
+    'django_mobile.middleware.SetFlavourMiddleware',
 )
 
 ROOT_URLCONF = 'retinalwebapp.urls'

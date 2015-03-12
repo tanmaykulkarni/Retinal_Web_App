@@ -16,8 +16,9 @@ from django.contrib import admin
 import retinalwebapp.views
 
 urlpatterns = patterns('',
-    # Examples:
-    url(r'^$', 'retinalwebapp.views.home', name='home'),
+    # Examples: 
+    # url(r'^$', 'retinalwebapp.views.home', name='home'),
+    url(r'^$', 'retinalwebapp.views.index', name='testing'),
     url(r'^signup', 'retinalwebapp.views.signup', name='signup'),
     url(r'^choose_activity', 'retinalwebapp.views.choose_activity', name='choose_activity'),
     url(r'^annotation', 'retinalwebapp.views.annotation', name='annotation'), 

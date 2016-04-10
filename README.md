@@ -3,7 +3,7 @@ iLabelIT on your desktop.
 
 iLabelIT is a Retinal Annotation Web App which is easily accessible from your desktop browser. 
 With the help of iLabelIT, retinal images can be easily annotated.In order to use the iLabelIT web app the user needs to register first or login into his/her account.Once the user has created an account or logged in his/her account, the user can choose between two options.
-iLabelIT is divided into tow parts.
+iLabelIT is divided into two parts.
 - QUIZ
 - ANNOTATE RETINAL IMAGES
 
